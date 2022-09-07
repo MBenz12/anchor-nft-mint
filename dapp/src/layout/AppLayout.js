@@ -17,14 +17,6 @@ const AppLayout = () => {
         <Layout style={{ minHeight: "100vh" }}>
           <Header>
             <Row align="stretch" gutter={20}>
-              {/* <Col>
-                <img src={logo} width={40} height={40} />
-              </Col>
-              <Col>
-                <h1>
-                  <font color="white">Solana NFT Minter</font>
-                </h1>
-              </Col> */}
               <Col flex="auto"></Col>
               <Col style={{ marginRight: 10 }}>
                 <WalletMultiButton className="wallet-button" />
@@ -41,14 +33,6 @@ const AppLayout = () => {
             {connected == false && <WrongNetwork />}
             {connected && publicKey == null && <WrongNetwork />}
           </Content>
-          {/* <Footer
-            style={{
-              position: "sticky",
-              bottom: 0,
-            }}
-          >
-            © 2022 All rights reserved by Daniel Armstrong.
-          </Footer> */}
         </Layout>
       </Col>
     </Row>
