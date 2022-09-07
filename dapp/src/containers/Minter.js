@@ -331,20 +331,15 @@ const Minter = () => {
                     maxCount={1}
                     height={400}
                   >
-                    {
-                      imageFileBuffer ? <img src={URL.createObjectURL(imageFileBuffer)}></img> : 
-                      <>
-                        <p className="ant-upload-drag-icon">
-                          <InboxOutlined />
-                        </p>
-                        <p className="ant-upload-text">
-                          Click or drag file to this area to upload
-                        </p>
-                        <p className="ant-upload-hint">
-                          Support for a singe image.
-                        </p>
-                      </>
-                    }                    
+                    <p className="ant-upload-drag-icon">
+                      <InboxOutlined />
+                    </p>
+                    <p className="ant-upload-text">
+                      Click or drag file to this area to upload
+                    </p>
+                    <p className="ant-upload-hint">
+                      Support for a singe image.
+                    </p>
                   </Upload.Dragger>
                 </Form.Item>
               </Col>
